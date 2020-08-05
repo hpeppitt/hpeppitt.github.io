@@ -1,0 +1,74 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+@keyframes spin {
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+
+.doggo-list {
+  width: 100%;
+  height: 20vh;
+  background-color: #FF5555;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.dergs {
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.doggo-img {
+  max-height: 60vh;
+  max-width: 100vw;
+  display: none;
+}
+
+select, h1 {
+  margin: 50px 25px;
+}
+
+h1 {
+  font-size: 50pt;
+}
+
+select {
+  text-transform: capitalize;
+  padding: 10px 20px;
+  background-color: black;
+  color: white;
+  box-shadow: none;
+  border: none;
+  border-radius: 5px;
+  height: 50px;
+  width: 30vw;
+  font-size: 20pt;
+}
+
+.loading {
+  height: 100px;
+  width: 100px;
+}
+
+.spin {
+  animation: spin 1s linear infinite;
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.hide {
+  display: none;
+}
